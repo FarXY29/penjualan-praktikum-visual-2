@@ -13,12 +13,12 @@ class User_model extends CI_Model
         $data = array(
             'nik' => htmlspecialchars($this->input->post('nik'), true),
             'username' => htmlspecialchars($this->input->post('username'), true),
-            'password' => password_hash($this->input->post('password'), PASSWORD_DEFAULT),
-            'email' => htmlspecialchars($this->input->post('email'), true),
             'full_name' => htmlspecialchars($this->input->post('full_name'), true),
-            'phone' => htmlspecialchars($this->input->post('phone'), true),
-            'address' => htmlspecialchars($this->input->post('address'), true),
+            'password' => password_hash($this->input->post('password'), PASSWORD_DEFAULT),
             'role' => htmlspecialchars($this->input->post('role'), true),
+            'phone' => htmlspecialchars($this->input->post('phone'), true),
+            'email' => htmlspecialchars($this->input->post('email'), true),
+            'address' => htmlspecialchars($this->input->post('address'), true),
             'is_active' => 1,
         );
         return $this->db->insert($this->_table, $data);
@@ -48,7 +48,7 @@ class User_model extends CI_Model
     {
         $this->db->where('id', $id)->delete($this->_table);
         if ($this->db->affected_rows() > 0) {
-            $this->session->set_flashdata("success", "Data user berhasil diDelete");
+            $this->session->set_flashdata("success", "Data User Berhasil DiDelete");
         }
     }
 }
