@@ -33,7 +33,7 @@ class Barang extends CI_Controller
     public function index()
     {
         $data = array(
-            'title' => 'View Data Barang / C0d&d by Ahrnad M@uIana',
+            'title' => 'View Data Barang',
             'userlog' => infoLogin(),
             'barang' => $this->Barang_model->getAll(),
             'content' => 'barang/index'
