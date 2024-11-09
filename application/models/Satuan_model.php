@@ -26,7 +26,7 @@ class Satuan_model extends CI_Model
         $id = $this->input->post('id');
         $data = array(
             'name' => htmlspecialchars($this->input->post('name'), true),
-            'deskripsi' => htmlspecialchars($this->input->post('deskripsi'), true)
+            'diskripsi' => htmlspecialchars($this->input->post('diskripsi'), true)
         );
         return $this->db->set($data)->where($this->primary, $id)->update($this->_table);
     }

@@ -21,7 +21,7 @@
                             <tr>
                                 <th>No.</th>
                                 <th>Name</th>
-                                <th>Deskrispi</th>
+                                <th>Diskrispi</th>
 
                             </tr>
                         </thead>
@@ -33,7 +33,7 @@
                                 <tr> 
                                     <td> $no </td>
                                     <td> $satuan->name </td>
-                                    <td> $satuan->deskripsi </td>
+                                    <td> $satuan->diskripsi </td>
                                     <td>
                                     <div>
                                         <a href=" . base_url('satuan/getedit/' . $satuan->id) . " class='btn btn-sm btn-info'> <i class='fas fa-edit'></i> Edit</a>

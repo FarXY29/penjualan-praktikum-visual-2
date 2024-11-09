@@ -14,7 +14,7 @@
                     </div>
                     <div class="mb-3">
                         <label>Dekripsi <code>*</code></label>
-                        <input class="form-control" name="deskripsi" type="text" placeholder="Deskrispi">
+                        <input class="form-control" name="diskripsi" type="text" placeholder="Deskrispi">
                     </div>
                     <button class="btn btn-primary" type="submit"><i class="fas fa-plus"></i> Save</button>
                 </form>

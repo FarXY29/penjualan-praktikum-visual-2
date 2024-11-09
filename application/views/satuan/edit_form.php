@@ -18,9 +18,9 @@
                         </div>
                     </div>
                     <div class="form-floating mb-3">
-                        <input class="form-control" type="text" name="deskripsi" value="<?= $satuan->deskripsi; ?>"
-                            placeholder="Deskripsi" required />
-                        <label for="deskripsi">Diskrispi <code>*</code></label>
+                        <input class="form-control" type="text" name="diskripsi" value="<?= $satuan->diskripsi; ?>"
+                            placeholder="Diskripsi" required />
+                        <label for="diskripsi">Diskrispi <code>*</code></label>
                     </div>
                     <button class="btn btn-primary" type="submit"><i class="fas fa-plus"></i> Save</button>
                 </form>
